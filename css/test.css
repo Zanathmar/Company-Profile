@@ -1,0 +1,193 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.div-logo a svg {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 200;
+}
+/* Light Theme */
+body.light-theme input {
+    background-color: #f4f4f4;
+    color: #2c2c2c;
+
+}
+body.light-theme {
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+body.light-theme .form-container {
+    background-color: #ffffff;
+}
+
+body.light-theme button {
+    background-color: #0085fa;
+    color: #ffffff;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+body.light-theme button:hover {
+    background-color: #006ae4;
+}
+
+
+/* Layout styles */
+.main-container {
+    position: absolute;
+    display: flex;
+    width: 69%;
+    max-width: 1000px;
+    height: 550px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgb(67, 67, 67);
+    z-index: 100;
+}
+ video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-position-x: center;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-container {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3e3e3e;
+    color: #eeeeee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #0083e1;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+.Verified {
+    position: absolute;
+    width: 100px;
+    right: 13%;
+    top: 12%;
+    box-shadow: #404040;
+}
+
+/* ... (rest of the CSS remains the same) */
+
+/* Media queries for responsive design */
+
+/* iPhone and iPad */
+@media only screen and (max-width: 768px) {
+    body {
+       height: 100vh; 
+    }
+    .main-container {
+        width: 90%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
+    .image-container {
+        display: none;
+    }
+    .form-container {
+        width: 100%;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 22px;
+        box-shadow: 0px 0px 10px rgb(67, 67, 67);
+    }
+    .input-group {
+        gap: 5px;
+    }
+    label {
+        font-size: 12px;
+    }
+    input {
+        padding: 8px;
+    }
+    button {
+        padding: 8px;
+    }
+    .Verified {
+        width: 80px;
+        right: 10%;
+        top: 10%;
+    }
+}

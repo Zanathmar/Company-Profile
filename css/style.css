@@ -1,0 +1,375 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #ffffff00;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    
+}
+
+
+ .div-logo svg {
+    
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+header nav ul button {
+  position: absolute;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul button svg {
+  width: 30px;
+  height: 30px;
+}
+header nav button svg:hover {
+  transform: scale(1.08);
+}
+header nav ul {
+  top: 0;
+    margin:0;
+    width: fit-content;
+    background-color: #ffffff;
+    /* filter: invert(1); */
+    border-radius: 100px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+
+    color: #000000;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+header nav ul li:hover{
+    background-color: #fff;
+    color: #333;
+    border-radius: 100px;
+}
+
+header nav ul li a {
+    padding: 2px 8px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease-out;
+}
+header nav ul li a:hover {
+    color: #333;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('../image/Cybertruck.avif') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.hero-content {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    font-weight: 550;
+    margin-top: 10px;
+    background: #fff;
+    color: #333;
+    padding: 8px 50px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 3px;
+    border-width: 3.4px;
+    border-style: solid;
+    border-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+.hero-content button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    background: url('../image/AboutTesla.avif');
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+    min-height: 800px;
+}
+
+#about h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about p {
+    letter-spacing: 1px;
+    color: #333;
+    font-size: 15px;
+    text-align: center;
+}
+#about a button {
+    margin-top: 40px;
+    background: #fff;
+    color: #333;
+    padding: 8px 50px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 3.2px;
+    transition: all 0.3s ease-in-out;
+}
+#about a button:hover {
+    background-color: #333;
+    color: #fff
+}
+
+
+/* Us */
+#us {
+    padding-top: 100px;
+    background-color: #111111;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 300px;
+}
+
+#us img {
+    width: 100%;
+}
+#us h3 {
+    font-size: 30px;
+    color: #fff;
+}
+#us p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+}
+#join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+#join h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#join a button {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    background: #111111;
+    color: #fff;
+    padding: 8px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 3.2px;
+    transition: all 0.3s ease-in-out;
+}
+#join a button:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #fff;
+}
+footer {
+    background-color: #111111;
+}
+
+footer  ul {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+footer ul li {
+    color: #ffffffab;
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: #ffffffab;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* Media queries for iPhone and iPad */
+@media only screen and (max-width: 768px) {
+    /* iPhone styles */
+    .container {
+      max-width: 90%;
+      margin: 20px auto;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+    }
+  
+    header nav li {
+      margin-right: 0;
+    }
+  
+    .hero-section {
+      height: 50vh;
+    }
+  
+    .hero-content {
+      text-align: left;
+    }
+  
+    .hero-content svg {
+      width: 50px;
+      height: 15px;
+    }
+  
+    .about-section {
+      padding: 20px;
+    }
+  
+    .us-section img {
+      height: 150px;
+    }
+  
+    .join-section {
+      padding: 20px;
+    }
+  
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    footer ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    footer ul li {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    /* iPad styles */
+    .container {
+      max-width: 80%;
+      margin: 30px auto;
+    }
+  
+    header nav ul {
+      flex-direction: row;
+    }
+  
+    header nav li {
+      margin-right: 10px;
+    }
+  
+    .hero-section {
+      height: 60vh;
+    }
+  
+    .hero-content {
+      text-align: center;
+    }
+  
+    .hero-content svg {
+      width: 70px;
+      height: 20px;
+    }
+  
+    .about-section {
+      padding: 30px;
+    }
+  
+    .us-section img {
+      height: 200px;
+    }
+  
+    .join-section {
+      padding: 30px;
+    }
+  
+    footer {
+        display: flex;
+        flex-direction: column;
+      padding: 20px;
+    }
+  }

@@ -1,0 +1,120 @@
+.model-sectionS {
+    background: url(../image/../image/ModelS.avif);
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+.model-section3 {
+    background: url(../image/../image/Model3.avif);
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+.model-sectionX {
+    background: url(../image/../image/ModelX.avif);
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+.model-sectionY {
+    background: url(../image/../image/ModelY.avif);
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+.solar-panels {
+    background: url(../image/../image/SolarPanels.avif);
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+.accessories {
+    background: url(../image/../image/TeslaAccessories.avif);
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+.model-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: 25%;
+    gap: 20px;
+    z-index: 30;
+}
+
+.model-image{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    z-index: 3;
+}
+.model-title {
+    color: #fff;
+    font-family: 'Roboto', sans-serif, Helvetica;
+}
+
+.model-a{
+    background-color: rgb(0, 85, 255);
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.model-a:hover {
+    background-color: rgb(0, 63, 189);
+}
+
+@media (max-width: 600px) {
+    .model-sectionS {
+        background: url(../image/ModelS.avif);
+        background-position-x: center;
+        height: 100vh;
+        background-size: cover;
+    }
+    .model-section3 {
+        background: url(../image/Model3.avif);
+        background-position-x: center;
+        height: 100vh;
+        background-size: cover;
+    }
+    .model-sectionX {
+        background: url(../image/ModelX.avif);
+        background-position-x: center;
+        height: 100vh;
+        background-size: cover;
+    }
+    .model-sectionY {
+        background: url(../image/ModelY.avif);
+        background-position-x: center;
+        height: 100vh;
+        background-size: cover;
+    }
+    .solar-panels {
+        background: url(../image/SolarPanels.avif);
+        background-position-x: center;
+        height: 100vh;
+        background-size: cover;
+    }
+    .accessories {
+        background: url(../image/TeslaAccessories.avif);
+        background-position-x: center;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .model-image{
+        object-fit: cover;
+    }
+
+    .hero-header{
+        padding: 0;
+    }
+
+    .model-footer{
+        flex-direction: column;
+    }
+}
+
+
